@@ -1,3 +1,10 @@
+const botao = document.querySelector(".btn-plataforma");
+const plataformas = document.querySelector(".plataformas");
+
+botao.addEventListener("click", () => {
+  plataformas.classList.toggle("ativo");
+});
+
 /*
 
 Objetivo 1 - quando o usuário clicar no botão de seleção de plataformas deve abrir uma caixa com os botões de seleção de plataforma
@@ -15,15 +22,3 @@ Objetivo 2 - caso a lista de botões de plataformas já esteja aparecendo e o us
     Passo 1 - verificar se o botão já esta aberto, se sim, devemos remover a classe ativo pra que ele esconda o conteúdo novamente
 
 */
-
-const botao = document.querySelector(".btn-plataforma");
-const plataformas = document.querySelector(".plataformas");
-
-botao.addEventListener("click", () => {
-  plataformas.classList.toggle("ativo");
-  //   if (btnOpen) {
-  //     plataformas.classList.remove("ativo");
-  //   } else {
-  //     plataformas.classList.add("ativo");
-  //   }
-});
